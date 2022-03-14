@@ -31,10 +31,12 @@ button:hover {
 }
 
 .navbar {
+    position: fixed;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1.5em 2.5em;
-    position: relative;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar a {
@@ -84,7 +86,7 @@ button:hover {
 }
 
 .welcome-section {
-    padding-top: 5em;
+    padding-top: 10em;
     padding-bottom: 14em;
 }
 
@@ -288,9 +290,9 @@ footer h2 {
 
 @media screen and (max-width: 700px) {
     .navbar {
-        position: fixed;
         z-index: 999;
         width: 100%;
+        position: relative;
     }
 
     .nav-toggle {
@@ -301,7 +303,7 @@ footer h2 {
     .nav-links {
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 99%;
         transition: top 0.5s ease-in-out;
         background-color: var(--primary-color);
     }
