@@ -99,6 +99,17 @@ button:hover {
     font-size: 1.5em;
 }
 
+.blinking-cursor {
+    color: var(--secondary-color);
+    margin-left: -2px;
+    border-left: solid var(--primary-color) 1px;
+}
+
+.blinking-cursor-off {
+    border-color: var(--secondary-color);
+}
+
+
 .projects-section h2 {
     padding: 2.2em 5em;
     padding-bottom: 1em;
