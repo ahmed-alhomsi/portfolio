@@ -106,6 +106,10 @@ button:hover {
     font-size: 3em;
 }
 
+.projects-note {
+    margin-bottom: 0.5em;
+}
+
 #prevBtn {
     background-color: var(--secondary-color);
     border-radius: 50%;
@@ -140,10 +144,11 @@ button:hover {
 .card {
     background-color: var(--card-background);
     border-radius: 15px;
+    height: 500px;
 }
 
 .card p {
-    padding: 1em 5em;
+    padding: 1.5em 2em;
 }
 
 .card-image-div {
@@ -169,6 +174,7 @@ button:hover {
     font-size: 1em;
     padding: .8em 1.5em;
     border-radius: 18px;
+    text-decoration: none;
     margin-bottom: 25px;
 }
 
@@ -196,7 +202,7 @@ button:hover {
 
 .about-me-section p {
     max-width: 40ch;
-    font-size: 1.4em;
+    font-size: x-large;
     line-height: 1.2em;
     font-weight: bolder;
 }
@@ -265,6 +271,10 @@ footer h2 {
     display: none;
 }
 
+.mobile {
+    display: none;
+}
+
 @media screen and (max-width: 700px) {
     .navbar {
         position: fixed;
@@ -310,20 +320,54 @@ footer h2 {
         font-size: 16px;
     }
 
+    #prevBtn {
+        display: none;
+    }
+
+    #nextBtn {
+        display: none;
+    }
+
     .projects-section h2 {
-        padding: 1em 0.5em;
-        font-size: x-large;
+        padding: 2em;
+        font-size: 2.5rem;
     }
 
     .projects {
-        padding: 0em;
-        padding-bottom: 5em;
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .card-image-div {
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .card p {
+        padding: 1.5em;
     }
 
     .about-me-section {
         text-align: center;
         padding: 1em;
-        font-size: 14px;
+        padding-top: 3em;
+        font-size: medium;
     }
 
     .about-me-section .flex {
@@ -336,15 +380,46 @@ footer h2 {
 
     .outro-section {
         font-size: small;
-        padding: 4em;
+        padding: 8em;
+    }
+
+    .contact-button {
+        padding: 1em;
     }
 
     footer {
         flex-direction: column;
-        padding: 0.5em 0.5em;
+        padding: 1em;
     }
 
     footer h2 {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 1em;
+    }
+
+    .navbar a {
+        font-size: medium;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .card {
+        min-width: 95%;
+    }
+
+    .outro-section {
+        padding: 8em 1.5em;
+        font-size: x-small;
+    }
+
+    .contact-button {
+        font-size: small;
     }
 }
