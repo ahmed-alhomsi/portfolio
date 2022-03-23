@@ -14,8 +14,23 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+::-moz-selection {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 5px;
 }
 
 ul {
@@ -41,10 +56,12 @@ button:hover {
 
 .navbar a {
     text-decoration: none;
+    font-family: 'Righteous', cursive;
     font-size: large;
     font-weight: 400;
     color: #F5F5F5;
     padding: 1em .5em;
+    letter-spacing: 2.5px;
 }
 
 .navbar a:hover {
@@ -63,6 +80,10 @@ button:hover {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
 }
 
 .even-section {
@@ -85,9 +106,23 @@ button:hover {
     font-size: larger;
 }
 
+.hello-world {
+    font-family: 'Righteous', cursive;
+}
+
 .welcome-section {
-    padding-top: 10em;
-    padding-bottom: 14em;
+    padding-top: 15em;
+    padding-bottom: 20em;
+}
+
+.welcome-wrapper {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    height: 25vh;
+    width: 45vw;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 
 .welcome-section h1 {
@@ -102,7 +137,7 @@ button:hover {
 }
 
 .blinking-cursor {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-left: -2px;
     border-left: solid var(--primary-color) 1px;
 }
