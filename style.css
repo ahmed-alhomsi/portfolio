@@ -259,6 +259,12 @@ button:hover {
     font-weight: bolder;
 }
 
+.cv-image {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 25px;
+}
+
 .outro-section {
     padding: 15em;
 }
