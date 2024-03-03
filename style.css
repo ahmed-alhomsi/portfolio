@@ -91,6 +91,18 @@ button:hover {
     margin-bottom: 15px;
 }
 
+.mt {
+    margin-top: 15px;
+}
+
+.pt {
+    padding-top: 50px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
 .even-section {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -150,6 +162,37 @@ button:hover {
     border-color: var(--secondary-color);
 }
 
+.previous-experience {
+    font-size: 1.5em;
+    /* padding: 10px; */
+}
+
+.experience-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.previous-experience h2 {
+    font-size: 3em;
+}
+
+.previous-experience img {
+    margin-top: 50px;
+    max-width: 500px;
+    max-height: 250px;
+    transition: all 0.3s ease-in-out;
+    /* max-width: 20%;
+    max-height: 20vh; */
+}
+
+.previous-experience img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
 
 .projects-section h2 {
     padding: 2.2em 4em;
