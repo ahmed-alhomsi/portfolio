@@ -45,6 +45,18 @@ button:hover {
     cursor: pointer;
 }
 
+iframe {
+    border-radius: 10px;
+    border: solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+iframe:hover {
+    border: solid var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
 .navbar {
     position: fixed;
     background-color: var(--primary-color);
@@ -165,6 +177,14 @@ button:hover {
 .previous-experience {
     font-size: 1.5em;
     /* padding: 10px; */
+}
+
+.previous-experience p {
+    width: 80ch;
+    max-width: 100%;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 50px;
 }
 
 .experience-images {
@@ -377,6 +397,11 @@ footer h2 {
 }
 
 @media screen and (max-width: 700px) {
+
+    img {
+        max-width: 100% !important;
+    }
+
     .navbar {
         z-index: 999;
         width: 100%;
@@ -422,6 +447,11 @@ footer h2 {
 
     .welcome-section p {
         font-size: 16px;
+    }
+
+    .previous-experience h2 {
+        font-size: 0.5rem;
+        /* padding: 10px; */
     }
 
     #prevBtn {
