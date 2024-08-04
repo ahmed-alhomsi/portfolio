@@ -537,6 +537,11 @@ footer h2 {
         width: 100%;
     }
 
+    #credibility {
+        padding-top: 5rem !important;
+        padding: 1rem;
+    }
+
     .outro-section {
         font-size: small;
         padding: 8em;
@@ -557,6 +562,9 @@ footer h2 {
 }
 
 @media screen and (max-width: 500px) {
+    h2 {
+        font-size: 1.5rem !important;
+    }
     .navbar {
         padding: 1em;
     }
